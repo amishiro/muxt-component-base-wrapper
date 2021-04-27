@@ -58,7 +58,7 @@ export default {
   computed: {
     /**
      * 背景色指定用のclassを生成
-     * @returns { void }
+     * @returns {( String | undefined )} - class名 || undefinedを返す
      */
     addClassColor() {
       return this.color ? `is-color-${this.color}` : undefined
@@ -66,7 +66,7 @@ export default {
 
     /**
      * 横幅のサイズ用のclassを生成
-     * @returns { void }
+     * @returns {( String | undefined )} - class名 || undefinedを返す
      */
     addClassSize() {
       return this.size ? `is-size-${this.size}` : undefined
@@ -74,7 +74,7 @@ export default {
 
     /**
      * 上下のpadding用のclassを生成
-     * @returns { void }
+     * @returns {( String | undefined )} - class名 || undefinedを返す
      */
     addClassPadding() {
       return this.padding ? `is-padding-${this.padding}` : undefined
@@ -82,7 +82,7 @@ export default {
 
     /**
      * 上のpadding用のclassを生成
-     * @returns { void }
+     * @returns {( String | undefined )} - class名 || undefinedを返す
      */
     addClassPaddingTop() {
       return this.paddingTop ? `is-padding-top-${this.paddingTop}` : undefined
